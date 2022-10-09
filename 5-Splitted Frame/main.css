@@ -1,0 +1,29 @@
+div{
+    width:700px;
+    height: 500px;
+    background-image: linear-gradient( to right , white 50%, #343434 50% );
+    margin:100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+   
+}
+
+img{
+    padding-bottom: 10px;
+}
+
+div::before{
+    content: "";
+    width:720px;
+    height: 540px;
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: -20px;
+    background-image: linear-gradient( to right , #343434 51.4% , white 50%);
+
+
+  }
+

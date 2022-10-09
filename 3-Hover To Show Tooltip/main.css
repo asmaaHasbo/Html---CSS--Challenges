@@ -1,0 +1,51 @@
+span{
+    background-color: red;
+    color:  white;
+    font-size: 25px;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    padding: 20px;
+    
+}
+
+span::after{
+     content: attr(data-text); 
+    display: none;  
+    position: absolute;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: black;
+    top: -69px;
+    left: -62px;
+    animation: change-opacity 1s ;
+ 
+}
+
+span::before{
+    content: "";
+    display: none;
+    position: absolute;
+    border: 10px solid;
+    top: -21px;
+    left: 83px;
+    border-color: black transparent transparent transparent;
+    z-index: 1;
+    animation: change-opacity 1s ;
+}
+
+span:hover::before , span:hover::after{
+    display: block;
+    cursor: pointer;
+} 
+
+@keyframes change-opacity {
+     from{
+        opacity: .5;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

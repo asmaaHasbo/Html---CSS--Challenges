@@ -1,0 +1,144 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.services,
+.about,
+.skills{
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.nav,
+.services,
+.container,
+.about,
+.section5,
+.footer
+{
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ---------section 1 ------- */
+
+.nav{
+    text-transform: capitalize;
+    padding: 15px 0px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+ul li {
+    margin-right: 15px;
+}
+
+.nav h4{
+    font-size: 20px;
+}
+
+/* ---------section 2 ------- */
+
+.services {
+    justify-content: center;
+}
+
+.services h1,
+.about h2{
+    padding-bottom: 15px;
+}
+
+.services span{
+    color: dodgerblue;
+}
+
+
+/* ---------section 3 ------- */
+
+
+.container div ,
+.section5 div{
+    width: calc((100% - 30px)/3);
+}
+
+.container img{
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.container p{
+    font-size: 14px;
+    opacity: .5;
+}
+
+/* ---------section 4 ------- */
+
+.about img{
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow:7px 7px 11px 0px #ccc;;
+}
+
+.about div{
+    text-align: start;
+    width: calc(60% - 30px );
+}
+
+/* --------- section 5 ------- */
+
+.section5 div{
+    padding: 20px 0px;
+    color: white;
+}
+.section5 .child1{
+    background-color: indianred;
+}
+
+.section5 .child2{
+    background-color:cornflowerblue;
+}
+.section5 .child3{
+    background-color: seagreen;
+}
+
+.section5 p{
+    font-size: 13px;
+}
+
+/* --------- section 6 ------- */
+
+
+.skills{
+    width: 80%;
+    justify-content: center;
+}
+
+/* --------- section 7 ------- */
+.footer{
+    padding:10px 0px ;
+    background-color:black;
+    color: white;
+    font-size: 15px;
+}

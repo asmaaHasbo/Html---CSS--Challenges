@@ -1,0 +1,130 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parent{
+    
+    width: 800px;
+    height: fit-content;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 40px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.parent img{
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    margin-left: -73px;
+}
+
+.parent .img{
+    width: 300px;
+    height: 300px;
+    border: 10px solid rgb(185 11 11 / 53%);
+    display: flex;
+    align-items: center;
+    
+}
+
+.parent h1{
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    opacity: .8;
+}
+
+
+.container{
+    display: grid;
+    gap: 25px;
+}
+
+.container h5{
+    color: red;
+    position: relative;
+    margin-left: 55px ;
+}
+
+.container h5::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -46px;
+    width: 39px;
+    height: 2px;
+    background-color: red;
+}
+
+.container h5::before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -52px;
+    width: 10px;
+    height: 8px;
+    border: 1px solid red;
+}
+
+.container p{
+    line-height: 25px;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+
+.products div{
+    padding: 25px 10px 10px 10px ;
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+}
+
+.products h1{
+    font-size: 40px;
+    opacity: .1;
+    z-index: -1;
+    position: absolute;
+    bottom: 1px;
+    right: 6px;
+}
+
+.products p {
+    font-weight: bold;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.products i{
+    color: #da7e7e;
+    font-size: 40px;
+}
+
+.products div::before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: 12px solid;
+    border-color: transparent #eee transparent transparent;
+}

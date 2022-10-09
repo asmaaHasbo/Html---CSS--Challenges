@@ -1,0 +1,168 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --basic-color:rgb(27 118 113);
+    
+}
+
+.heading{
+    padding: 10px 20px ;
+    color: white;
+    background-color: rgb(43 78 78);
+    width: fit-content;
+}
+
+.section{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 3px 4px 0 #9e9c9c;
+    padding: 20px;
+    display: grid
+}
+
+
+/* ____________ section1_______________- */
+.conatinar{
+    width: 1100px;
+    background-color: #eee;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    row-gap: 20px;
+    
+}
+.child1{
+   
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+
+}
+.child1-01 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 27px;
+}
+.child1-01{
+    display: grid;
+    row-gap: 7px;
+    justify-content: center;
+    text-align: center;
+}
+
+div:empty{
+    height: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient( to right , var(--basic-color) 80% , #eee 80% );
+}
+.child1-01>p>span{
+    color: var(--basic-color);
+}
+
+.child1-02{
+    padding-left:10px ;
+    border-left: 2px solid red ;
+    position: relative;
+}
+
+.child1-02>p{
+    color: rgb(70, 69, 69);
+    padding: 10px;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.child1-02 .p-140{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ________________ section2 ____________ */
+
+.pointslog{
+    row-gap:20px ;
+    text-transform: capitalize;
+}
+
+.pointslog h2 {
+    padding: 15px;
+}
+.pointslog >.p2{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0px  ;
+}
+
+.pointslog .num{
+    font-weight: bold;
+    color: var(--basic-color);
+}
+
+.pointslog p span{
+    font-weight: bold;
+    color: rgb(169, 11, 95);
+} 
+
+/* ________________ section3 ____________ */
+
+.trophies{
+    grid-template-columns: repeat(12 , auto);
+    grid-template-rows: auto 1fr 1fr;
+    row-gap: 15px;
+}
+
+.trophies h1{
+    grid-area: 1 / 1 / 1 / 13;
+}
+
+.trophies img{
+    width: 80px;
+    height: 80px;
+}
+
+.img-opacity{
+    opacity: .1;
+}
+
+/*________________ section4 ___________*/
+
+.leader-new p{
+    font-size: 18px;
+    padding: 20px 0px;
+}
+
+.leader-new p span {
+    font-weight: bold;
+    color:dodgerblue;
+}
+
+.leader-new p .span-65 {
+    color:red;
+}
+
+/*________________ section5 ___________*/
+
+.your-powers div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.yes{
+    font-weight: bold;
+    color: green;
+}
+
+.no{
+    font-weight: bold;
+    color: red;
+}
