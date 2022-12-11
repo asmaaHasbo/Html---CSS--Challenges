@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #1a55f0;
+  --scandry-color: #8599b8;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.page {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 100vh;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/* ------------- aside -----------*/
+aside {
+  grid-area: 1 / 1 / 11 / 1;
+  background-color: var(--main-color);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+aside i {
+  color: white;
+}
+
+aside i:hover,
+aside i:nth-child(2) {
+  background-color: #2196f3;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*---------------------- nav ------------------*/
+nav {
+  grid-area: 1 / 2 / 1 / 21;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 20px;
+  align-items: center;
+  border-bottom: 1px solid #0000000d;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  background-color: #1652f0;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  height: fit-content;
+  margin-right: 5px;
+}
+
+.logo p {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav .name {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+nav .name div {
+  border: 1px solid #0000000d;
+  padding: 3px 15px;
+  border-radius: 30px;
+  margin-right: 15px;
+  background-image: linear-gradient(to right, #eef2fe 50%, white 50%);
+}
+nav .name div span:nth-child(1) {
+  color: #0d40c6;
+  margin-right: 20px;
+}
+nav .name div span:nth-child(2) {
+  color: #8599b8;
+}
+
+nav .name i:nth-child(2) {
+  margin-right: 15px;
+  padding: 12px;
+  color: white;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+nav .name h3 {
+  color: #8599b8;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* ---------------------- intro text -------------- */
+.intro-text {
+  grid-area: 2 / 2 / 2 / 21;
+  margin-left: 50px;
+  margin-top: 16px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 15px;
+}
+.intro-text span {
+  color: #8095b4;
+}
+
+/*---------------------- section1 ---------------*/
+.section1 {
+  grid-area: 3 / 2 / 11 / 10;
+  margin-left: 70px;
+  display: grid;
+  height: fit-content;
+  gap: 10px;
+}
+
+.section1 > div,
+.section2 > div {
+  background-color: #f2f6fe;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+/*------ first 2 buttons ----- */
+
+.section1 div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.section1 button {
+  width: calc((100% - 50px) / 2);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  height: 40px;
+}
+
+.section1 div:nth-child(1) button:nth-child(1) {
+  background-color: var(--main-color);
+}
+
+.section1 div:nth-child(1) button:nth-child(2) {
+  color: var(--main-color);
+  border: 1px solid rgb(237, 230, 230);
+  background-color: transparent;
+}
+
+.section1 .leading-text {
+  margin-top: 5px;
+  color: #535765;
+}
+
+.Btc,
+.info {
+  color: var(--scandry-color);
+  width: 50%;
+}
+
+.section1 .num,
+.section2 .num {
+  color: #8599b8;
+  width: 50%;
+}
+
+.section1 > button {
+  width: 100%;
+  background-color: #10d876;
+  height: 40px;
+}
+
+.section1 > p:last-child {
+  font-size: small;
+  color: #8095b4;
+  /* position: absolute; */
+  bottom: 0;
+  margin-top: 30px;
+}
+/* ------------------ section2 ------------------- */
+
+.section2 {
+  grid-area: 3 / 10 / 11 / 21;
+  margin-right: 40px;
+  margin-left: 70px;
+  display: grid;
+  height: fit-content;
+  gap: 10px;
+}
+
+.section2 > div {
+  height: 50px;
+}
+
+.section2 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.section2 > div:nth-child(1) > div:nth-child(2) img {
+  margin-left: 15px;
+}
+
+/*  account div */
+
+.section2 > div:nth-child(1) {
+  background-color: transparent;
+  justify-content: space-between;
+  height: auto;
+  padding: 0;
+}
+
+.section2 > div:nth-child(1) > div {
+  display: flex;
+  font-size: small;
+}
+
+.section2 > div:nth-child(1) > div:nth-child(2) {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.section2 .email {
+  color: var(--main-color);
+}
